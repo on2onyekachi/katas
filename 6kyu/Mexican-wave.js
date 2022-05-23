@@ -40,3 +40,6 @@ function wave(str){
   wave("") // [];
 
   wave(" gap ") //[" Gap ", " gAp ", " gaP "];
+
+
+  //LINK: https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
