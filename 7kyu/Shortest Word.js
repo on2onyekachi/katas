@@ -3,7 +3,7 @@
 // String will never be empty and you do not need to account for different data types.
 
 function findShort(s){
-    return (s.split(' ').map((ele, i) => ele.length).sort()[0])
+    return (s.split(' ').map((ele, i) => ele.length).sort((a, b) => a - b)[0])
   }
 
 findShort("bitcoin take over the world maybe who knows perhaps") // 3
