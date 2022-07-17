@@ -20,3 +20,5 @@ testEven(0.5) // false
 testEven(1) // false
 testEven(2) // true
 testEven(-4) // true
+
+// LLink: https://www.codewars.com/kata/555a67db74814aa4ee0001b5/solutions/javascript
