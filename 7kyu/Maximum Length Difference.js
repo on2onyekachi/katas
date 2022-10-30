@@ -13,20 +13,23 @@
 // output: number as a string
 
 function mxdiflg(a1, a2) {
-    // your code
-    arr = []
-    for(let x of a1){
-      for(let y of a2){
-        let diff = Math.abs(x.length - y.length)
-          arr.push(diff)
+  // your code
+  let arr = [];
+  if (a1 && a2 && a1.length >= 1 && a2.length >= 1) {
+    for (let x of a1) {
+      for (let y of a2) {
+        let diff = Math.abs(x.length - y.length);
+        arr.push(diff);
       }
     }
-   arr.sort((a, b) =>  a-b)
-  return arr[arr.length-1]
+    arr.sort((a, b) => a - b);
+    return arr[arr.length - 1];
   }
+  return -1;
+}
 
-let s1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"];
+let s1 = [ "hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz",];
 let s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
-mxdiflg(s1, s2) // 13
+mxdiflg(s1, s2); // 13
 
 //LINK: https://www.codewars.com/kata/5663f5305102699bad000056/train/javascript
